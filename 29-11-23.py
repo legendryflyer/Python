@@ -1,0 +1,15 @@
+num=[1,2,3,4,5,6,7,8,9]
+num.remove(3)
+num.pop()
+#print(num)
+num.reverse()
+#print(num)
+#num.clear()
+#print(num)
+num.sort()
+#print(num)
+num.append(10)
+#print(num)
+num.insert(2,"11")
+print(num)
+
