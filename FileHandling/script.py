@@ -1,5 +1,7 @@
 # program 1
 # open the file for writting data
+import os.path
+import sys
 
 f=open("file.txt","w")
 #enter the characters from keyword
@@ -37,3 +39,16 @@ str=h.read()
 print(str)
 h.close()
 
+
+
+
+#import os ,sys
+
+fname= input("enter the file name: ")
+if os.path.isfile(fname):
+    f=open(fname,"r")
+else:
+    sys.exit()
+i = f.read()
+print(i)
+f.close()
