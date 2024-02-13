@@ -37,9 +37,36 @@
 
 
 
-input()
-n = input().strip()[-1]
-if n == '0':
-    print("Yes")
+#input()
+#n = input().strip()[-1]
+#if n == '0':
+#    print("Yes")
+#else:
+#    print("No")
+
+#number = [1,2,3,4]
+#def get_squar(number):
+#    squar=[]
+#    for n in squar:
+#        squar.append(n*n)
+#        return squar
+##number = [1,2,3,4]
+#print(get_squar(number))
+
+
+
+import os,sys
+fname = input("enter the name: ")
+if os.path.isfile(fname):
+    f = open(fname,'a+')
 else:
-    print("No")
+    print("file not found")
+    sys.exit()
+f.seek(0,0)
+
+
+
+
+
+
+
