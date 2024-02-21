@@ -1,4 +1,4 @@
-# [A-Z , a-z , 0-9] // alphanumric  // " ", %%%
+# [\w]--- [A-Z , a-z , 0-9] // alphanumric  // " ", %%%
 # [\W] --- " " and special symbol
 # [\w]* zero or more repetitions
 # \d  -- represents only digits
@@ -120,4 +120,73 @@ e9 = re.findall(r'\bs[\w]*\Z',str6)
 e10 = re.findall(r'\A\bo[\w]*',str6)
 print(e10)
 print(e9)
+
+
+# program 13
+str = "tavish anade:828689631"
+print(str)
+e = re.search(r'\d+',str)
+print(e.group())
+
+
+
+#  '\w'  --> [A-Z a-z  0-9]
+#   '\W' --> Non alphanumeric
+#   '\d' --> digit
+#   '\D' --> non-digit
+
+
+e = re.search(r'\D+',str)
+print(e.group())
+
+f = re.search(r'[\w]* [\w]*',str)
+if f:
+    print(f.group())
+else:
+    print("pattern not found")
+
+
+# program 14
+str = " tavish ankit amit aman kirtish"
+g = re.findall(r'\ba[am][\w]*',str)
+print(g)
+
+# program 15
+str = 'chinmay 07-11-1989 amol 19-09-1990 mayuri 21-01-1989'
+f = re.findall(r'\d{2}-\d{2}-\d{4}',str)
+print(f)
+
+# program 16
+str  = "hello world"
+g = re.search(r'^he',str)
+print(g.group())
+
+# program 17
+str  = "hello world"
+g = re.search(r'world$',str)
+print(g.group())
+
+#program 19
+str  = "hello World"
+g = re.search(r'world$',str,re.IGNORECASE)
+print(g.group())
+
+# program 19
+students = "I got 80 marks I got 100 marks"
+print(re.findall(r'\d{2,3}',students))
+
+
+students = "Amol got 80 marks Mayuri got 100 marks"
+f = re.findall(r'[A-Z][a-z]*',students)
+print(f)
+
+
+# program 20
+string= "the morning meeting will be at 8am or 9am , evening at 8pm or 9pm"
+#output [8am,9am,8pm,9pm]
+#h = re.findall(r'\b\d[/w]*',string)
+#print(h)
+
+l = re.findall(r'\b\d[ap][\w]*',string)
+print(l)
 
