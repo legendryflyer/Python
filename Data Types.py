@@ -73,3 +73,9 @@ my_tuple = ("apple", "banana", "cherry")
 my_list = list(my_tuple)
 print(my_list)
 
+
+my_list[0] = "mango"
+print(my_list)
+
+my_tuple = tuple(my_list)
+print(my_tuple)
