@@ -79,3 +79,35 @@ print(my_list)
 
 my_tuple = tuple(my_list)
 print(my_tuple)
+
+
+# set 
+
+setA = {11,22,33,4,55,667,7777,7,7,7}
+print(type(setA))
+
+# set do not store duplicate values 
+print(len(setA))
+
+# set do not stores the value by index 
+
+# print(setA[0])
+
+for item in setA:
+    print(item)
+    
+# add() 
+setA = {11,22,33,4,55,667,7777,7,7,7}
+setA.add(6666)
+print(setA)
+
+# pop() remove the element of set randomly
+
+setA.pop()
+print(setA)
+
+# remove() we have to pass the element  which we want to remove from the set
+
+setA.remove(55)
+print(setA)
+
