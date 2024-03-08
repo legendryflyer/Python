@@ -18,21 +18,21 @@ for x in range(len(str)):
 
 # list
 
-list = [1,2,3,4,5,6]
+listA = [1,2,3,4,5,6]
 print(type(list))
-print(list[0])
+print(listA[0])
 
-list[2] = 44
+listA[2] = 44
 print(list)
 
 # for loop without using range
-for x in list:
+for x in listA:
     print(x)
 
 
 # for loop with using range
-for x in range(len(list)):
-    print(list[x])
+for x in range(len(listA)):
+    print(listA[x])
 
 # tuple
 # tuple also stores value by index
@@ -42,27 +42,27 @@ for x in range(len(list)):
 # length of tuple is fixed
 
 
-tuple = ("A","B","C")
-print(type(tuple))
+tupleA = ("A","B","C")
+print(type(tupleA))
 
 
-print(tuple[0])
-print(tuple[1])
-print(tuple[2])
+print(tupleA[0])
+print(tupleA[1])
+print(tupleA[2])
 
 # for loop without using range
-for x in tuple:
+for x in tupleA:
     print(x)
 
 #for loop using range
-for x in range(len(tuple)):
-    print(tuple[x])
+for x in range(len(tupleA)):
+    print(tupleA[x])
 
 
 # while loop
 i=0
-while(i < len(tuple)):
-    print(tuple[i])
+while(i < len(tupleA)):
+    print(tupleA[i])
     i = i+1
 
 #tuple[1] = "d"  cannot update single value of tuple
