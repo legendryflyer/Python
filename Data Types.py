@@ -111,3 +111,64 @@ print(setA)
 setA.remove(55)
 print(setA)
 
+# methord on set 
+
+setA={11,22,33,44,55}
+setB={44,55,66,77,88}
+
+# newSet=setA.intersection(setB)
+# print(newSet)
+
+
+# intersection()
+# newSet=setA.intersection(setB)
+# print(newSet)
+
+# intersection_update()
+
+# setA={11,22,33,44,55}
+# setB={44,55,66,77,88}
+# nnnSet = setA.intersection_update(setB)
+# print(nnnSet)
+# print(setA)
+
+
+# union
+# setC=setA.union(setB)
+# print(setC)
+
+# there is no such thing like union_update in python 
+
+# difference()
+
+
+setA={11,22,33,44,55}
+setB={44,55,66,77,88}
+
+# setD = setA.difference(setB)
+# print(setD)
+
+# difference_update ()
+
+
+# setE=setA.difference_update(setB)
+# print(setA)
+
+# setB.difference_update(setA)
+# print(setB)
+
+#  symmetric_difference()
+
+
+# setW = setA.symmetric_difference(setB)
+# print(setW)
+
+# setV=setB.symmetric_difference(setA)
+# print(setV)
+
+
+setA={11,22,33,44,55}
+setB={44,55,66,77,88}
+
+
+
